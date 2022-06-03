@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackLog"
+    tools:context=".view.fragments.ProfileFragment">
+
+    <include layout="@layout/toolbar_profile" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_vertical_padding"
+        android:layout_marginTop="@dimen/activity_vertical_padding"
+        android:layout_marginRight="@dimen/activity_vertical_padding"
+        android:background="@drawable/custom_border"
+        android:orientation="vertical"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/pad_user_image"
+            android:layout_weight="1.4"
+            android:background="@drawable/custom_border"
+            android:src="@drawable/pizza_profile" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:background="@drawable/custom_border">
+
+            <LinearLayout
+                android:layout_width="56mm"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/EditTextBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_username"
+                        android:paddingTop="@dimen/cardView_margin" />
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/pad_hor_login"
+                        android:hint="@string/prompt_username"
+                        android:textSize="@dimen/textSize_NoneAccount" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/EditTextBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/surnames"
+                        android:paddingTop="@dimen/cardView_margin" />
+
+                    <TextView
+                        android:id="@+id/surname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/pad_hor_login"
+                        android:hint="@string/surnames"
+                        android:textSize="@dimen/textSize_NoneAccount" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/EditTextBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_dni"
+                        android:paddingTop="@dimen/cardView_margin" />
+
+                    <TextView
+                        android:id="@+id/dni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/pad_hor_login"
+                        android:hint="@string/prompt_dni"
+                        android:textSize="@dimen/textSize_NoneAccount" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/EditTextBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_email"
+                        android:paddingTop="@dimen/cardView_margin" />
+
+                    <TextView
+                        android:id="@+id/userEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/pad_hor_login"
+                        android:hint="@string/prompt_email"
+                        android:textSize="@dimen/textSize_NoneAccount" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/EditTextBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/userAddress"
+                        android:paddingTop="@dimen/cardView_margin" />
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/pad_hor_login"
+                        android:hint="@string/userAddress"
+                        android:textSize="@dimen/textSize_NoneAccount" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

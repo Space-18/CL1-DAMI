@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorBackLog"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/img_pad_top"
+                    android:src="@drawable/logo_pizza"/>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/pad_hor_login">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/mar_st_textIn"
+                        android:layout_marginTop="@dimen/mar_top_textIn"
+                        android:layout_marginEnd="@dimen/mar_st_textIn"
+                        android:hint="@string/prompt_email"
+                        android:inputType="textEmailAddress"
+                        android:selectAllOnFocus="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/mar_st_textIn"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="@dimen/mar_st_textIn"
+                        android:hint="@string/prompt_password"
+                        android:imeActionLabel="@string/action_sign_in_short"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:selectAllOnFocus="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/username">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="@dimen/layout_w_button"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/mar_st_ed_button"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/mar_st_ed_button"
+                    android:enabled="false"
+                    android:onClick="goContainer"
+                    android:text="@string/action_sign_in"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/password"
+                    app:layout_constraintVertical_bias="0.2" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="0dp"
+                    android:paddingTop="@dimen/activity_horizontal_margin">
+
+                    <TextView
+                        android:id="@+id/NoneAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/NoneAccount"
+                        android:textSize="@dimen/textSize_NoneAccount"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/CreateAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/NoneAccount"
+                        android:onClick="goCreateAccount"
+                        android:paddingLeft="@dimen/padding_createAccount"
+                        android:text="@string/CreateAccount"
+                        android:textSize="@dimen/textSize_NoneAccount"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

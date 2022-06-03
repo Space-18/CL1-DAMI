@@ -1,0 +1,24 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="pad_hor_login">32dp</dimen>
+    <dimen name="textSize_NoneAccount">16sp</dimen>
+    <dimen name="padding_createAccount">5sp</dimen>
+    <dimen name="mar_st_textIn">24dp</dimen>
+    <dimen name="mar_top_textIn">45dp</dimen>
+    <dimen name="layout_w_button">150dp</dimen>
+    <dimen name="mar_st_ed_button">48dp</dimen>
+    <dimen name="img_pad_top">35dp</dimen>
+    <dimen name="editText_margin_register">10dp</dimen>
+    <dimen name="bottomBar_height">70dp</dimen>
+    <dimen name="height_cardView">250dp</dimen>
+    <dimen name="textSize_pizzaCard">25sp</dimen>
+    <dimen name="cardView_margin">10dp</dimen>
+    <dimen name="textSize_priceCard">15sp</dimen>
+    <dimen name="textSize_stockCard">15sp</dimen>
+    <dimen name="activity_vertical_padding">10dp</dimen>
+    <dimen name="pad_user_image">5dp</dimen>
+    <dimen name="img_pad_TopBot_register">10dp</dimen>
+    <dimen name="pad_hor_register">32dp</dimen>
+</resources>

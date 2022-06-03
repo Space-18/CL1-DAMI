@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true">
+
+    <tab
+        id="@+id/pizzaStore"
+        title="@string/tab_pizzaStore"
+        barColorWhenSelected="@color/colorAccent"
+        icon="@drawable/pizza_store"
+        />
+    <!--<a target="_blank" href="https://icons8.com/icon/E7xekSoLskIx/pizza-store">Pizza Store</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
+
+    <tab
+        id="@+id/profile"
+        title="@string/tab_profile"
+        barColorWhenSelected="@color/colorAccent"
+        icon="@drawable/pizza_profile"
+        />
+    <!--<a target="_blank" href="https://icons8.com/icon/114064/usuario-de-género-neutro">Usuario de género neutro</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
+
+</tabs>

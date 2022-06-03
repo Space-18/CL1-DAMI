@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CL1 - DAMI</string>
+    <string name="prompt_email">Correo</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in">Inicia sesion</string>
+    <string name="action_register">Crear cuenta</string>
+    <string name="action_sign_in_short">Iniciar sesion</string>
+    <string name="welcome">"Bienvenido!"</string>
+    <string name="exitApp">"Adios!"</string>
+    <string name="invalid_username">Este campo no debe estar vacio</string>
+    <string name="invalid_password">La contraseña debe tener más de 5 caracteres</string>
+    <string name="login_failed">"Fallo al iniciar sesion"</string>
+    <string name="NoneAccount">No tienes una cuenta? Crea una</string>
+    <string name="CreateAccount">aquí.</string>
+    <string name="prompt_username">Nombres</string>
+    <string name="surnames">Apellidos</string>
+    <string name="prompt_password_confirm">Confirmar contraseña</string>
+    <string name="toolbar_title_register">Nuevo Usuario</string>
+    <string name="userAddress">Dirección de domicilio</string>
+    <string name="tab_pizzaStore">Comprar Pizza</string>
+    <string name="tab_profile">Perfil</string>
+    <string name="toolbar_title_pizzaStore">Lista de pizzas a la venta</string>
+    <string name="toolbar_title_profile">Perfil de usuario</string>
+    <string name="pizzaAmericana_nameCard">Pizza Americana</string>
+    <string name="pizzaPrice">S/ 44.90</string>
+    <string name="stockD">Disponible</string>
+    <string name="stockND">No disponible</string>
+    <string name="userPhoneNumber">Número de telefono</string>
+    <string name="prompt_dni">DNI</string>
+</resources>
